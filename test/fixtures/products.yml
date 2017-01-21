@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  descreption: MyString
+  image: 
+  price: 1
+  brand: MyString
+
+two:
+  title: MyString
+  descreption: MyString
+  image: 
+  price: 1
+  brand: MyString

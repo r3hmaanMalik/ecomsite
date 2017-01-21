@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+    <h1>Products</h1>
+        <% @products.each do |product| %>
+        <a href="products/<%= product.id %>" >
+          <div class="col-lg-3 employe-tab">
+            <div class="employ-header">
+              <h4 class="text-center">
+                <%= product.title %>
+              </h4>
+              <hr>
+              <div class="employ-pic-area">
+                <%= image_tag product.image, class: "employ-pic" %>
+              </div>
+              <hr>
+              <h5 class="text-center">
+                Desc: <%= product.descreption %>
+              </h5>
+              <hr>
+              <h5 class="text-center">
+                Price: <%= product.price %>
+              </h5>
+            </div>
+          </div> 
+          </a>
+        <% end %>
+    </div>
+  </div>
+  <%= paginate @products, :theme => 'twitter-bootstrap-3',:pagination_class => "pagination-sm"%>
+</div>
+
+
+
+ 
